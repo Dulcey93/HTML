@@ -14,114 +14,18 @@
 </head>
 
 <body>
-    <!-- ETIQUETAS DE FORMATO HTML -->
+    <!-- FORMULARIOS E INPUTS HTML -->
 
-        <acronym> 	Not supported in HTML5. Use <abbr> instead. Defines an acronym
-        <abbr> 	    Defines an abbreviation or an acronym
-        <!-- The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.  -->
-        <address> 	Defines contact information for the author/owner of a document/article
-        <!--<address>
-                Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
-                Visit us at:<br>
-                Example.com<br>
-                Box 564, Disneyland<br>
-                USA
-            </address> -->
-        <b> 	Defines bold text, básicamente texto en negrita
-        <bdi> 	Isolates a part of text that might be formatted in a different direction from other text outside it
-        <!-- 
-                <h1>The bdi element</h1>
-                <p>In the example below, usernames are shown along with the number of points in a contest. If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").</p>
-                Básicamente le indica al html que ese texto es un caracter especial y que mantenga el orden en el que se está ingresando
-                <ul>
-                <li>User <bdi>hrefs</bdi>: 60 points</li>
-                <li>User <bdi>jdoe</bdi>: 80 points</li>
-                <li>User <bdi>إيان</bdi>: 90 points</li>
-                </ul> -->
-        <bdo> 	Overrides the current text direction
-            <!--Básicamente voltea el texto 
-                <bdo dir="rtl">
-                This text will go right-to-left.
-                </bdo>  -->
-        <big> 	Not supported in HTML5. 
-        <blockquote> 	Defines a section that is quoted from another source
-            <!--Referencia una sección de otro sitio
-                <blockquote cite="http://www.worldwildlife.org/who/index.html">
-                For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and issupported by 1.2 million members in the United States and close to 5 million globally.
-                </blockquote>  -->
-        <center>Not supported in HTML5. Use CSS instead.Defines centered text
-        <cite> 	Defines the title of a work 
-            <!--citar un autor
-                <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>  -->
-        <code> 	Defines a piece of computer code
-            <!--Escribe código con el estilo de código
-                <h1>The code element</h1>
-                <p>The HTML <code>button</code> tag defines a clickable button.</p>
-                <p>The CSS <code>background-color</code> property defines the background color of an element.</p> -->
-        <del> 	Defines text that has been deleted from a document 
-            <!--Tacha el texto como cuando uno se equivoca
-                <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>  -->
-        <dfn> 	Specifies a term that is going to be defined within the content
-            <!--Es como para usar palabras clave que luego serán explicadas
-                <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>  -->
-        <em> 	Defines emphasized text 
-            <!--Texto con enfasis
-                <p>You <em>have</em> to hurry up!</p>
-                <p>We <em>cannot</em> live like this.</p> -->
-        <font> 	Not supported in HTML5. Use CSS instead.Defines font, color, and size for text
-        <i> 	Defines a part of text in an alternate voice or mood
-            <!--Cursiva
-                <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
-                <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p> -->
-        <ins> 	Defines a text that has been inserted into a document
-                <!--Va junto con la etiqueta del y se usa para tachar una palabra y resaltar la otra que refiere a esa
-                <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>  -->
-        <kbd> 	Defines keyboard input
-                <!-- Para indicar entradas del teclado -->
-        <mark> 	Defines marked/highlighted text
-                <!-- Resalta el texto -->
-        <meter> Defines a scalar measurement within a known range (a gauge)
-                <!-- Para hacer barritas como de progreso o de espacio, pero obsoltea en edge, simplemente mejor hacerlo con otras herramientas -->
-        <pre> 	Defines preformatted text
-            <!-- 
-                <pre>
-                Text in a pre element
-                is displayed in a fixed-width
-                font, and it preserves
-                both      spaces and
-                line breaks
-                </pre> -->
-        <progress>Represents the progress of a task
-                <!-- Mejor otras herramientas -->
-        <q> 	Defines a short quotation
-            <!--Agregar acotación
-                <p>WWF's goal is to: 
-                <q>Build a future where people live in harmony with nature.</q>
-                We hope they succeed.</p> -->
-        <rp> 	Defines what to show in browsers that do not support ruby annotations
-        <rt> 	Defines an explanation/pronunciation of characters (for East Asian typography)
-        <ruby> 	Defines a ruby annotation (for East Asian typography)
-        <s> 	Defines text that is no longer correct
-            <!--Mejor CSS
-                <p><s>Only 50 tickets left!</s></p>
-                <p>SOLD OUT!</p> -->
-        <samp> 	Defines sample output from a computer program
-            <!--Un mensaje como si lo escribiera la consola
-            <h1>The samp element</h1>
-            <p>Message from my computer:</p>
-            <p><samp>File not found.<br>Press F1 to continue</samp></p> -->
-        <small> Defines smaller text
-        <strike>Not supported in HTML5. Use <del> or <s> instead.Defines strikethrough text
-        <strong>Defines important text
-            <!--Hace el texto en negrita 
-            <h1>The strong element</h1>
-            <p>This text is normal.</p>            
-            <p><strong>This text is important!</strong></p> -->
-        <sub> 	Defines subscripted text
-        <sup> 	Defines superscripted text
-        <template> 	Defines a container for content that should be hidden when the page loads
-        <time> 	Defines a specific time (or datetime)
-        <tt> 	Not supported in HTML5. Use CSS instead.Defines teletype text
-        <u> 	Defines some text that is unarticulated and styled differently from normal text
-        <var> 	Defines a variable
-        <wbr> 	Defines a possible line-break
+    <form> 	    Defines an HTML form for user input
+        <input> 	Defines an input control
+        <textarea> 	Defines a multiline input control (text area)
+        <button> 	Defines a clickable button
+        <select> 	Defines a drop-down list
+        <optgroup> 	Defines a group of related options in a drop-down list
+        <option> 	Defines an option in a drop-down list
+        <label> 	Defines a label for an <input> element
+        <fieldset> 	Groups related elements in a form
+        <legend> 	Defines a caption for a <fieldset> element
+        <datalist> 	Specifies a list of pre-defined options for input controls
+        <output> 	Defines the result of a calculation
+</body>
