@@ -14,13 +14,47 @@
 </head>
 
 <body>
-        <!-- LISTS HTML -->
+         <!-- TABLES HTML -->
 
-        <ul> 	Defines an unordered list
-            <ol> 	Defines an ordered list
-            <li> 	Defines a list item
-            <dir> 	Not supported in HTML5. Use <ul> instead.Defines a directory list
-            <dl> 	Defines a description list
-            <dt> 	Defines a term/name in a description list
-            <dd> 	Defines a description of a term/name in a description list
+         <table> 	Defines a table
+            <caption> 	Defines a table caption
+            <th> 	Defines a header cell in a table
+            <tr> 	Defines a row in a table
+            <td> 	Defines a cell in a table
+            <thead> 	Groups the header content in a table
+            <tbody> 	Groups the body content in a table
+            <tfoot> 	Groups the footer content in a table
+            <col> 	Specifies column properties for each column within a <colgroup> element
+            <colgroup> 	Specifies a group of one or more columns in a table for formatting
+
+        <!-- EJEMPLO -->
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
 </body>
