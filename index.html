@@ -6,21 +6,156 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Santiago Dulcey" />
-    <meta name="description" content="HTML Etiquetas por Categoría" />
-    <meta name="keywords" content="HTML, Element Reference" />
+    <meta name="description" content="HTML Etiquetas por Categoría de TABLAS" />
+    <meta name="keywords" content="HTML, TABLES, REFERENCE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Titulo -->
     <title>Santiago Dulcey | Referencia para etiquetas HTML</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-         <!-- LOGICA DE PROGRAMACIÓN HTML -->
-        
-            <!-- 
-            <script> 	Defines a client-side script
-            <noscript> 	Defines an alternate content for users that do not support client-side scripts
-            <applet> 	Not supported in HTML5. Use <embed> or <object> instead.Defines an embedded applet
-            <embed> 	Defines a container for an external (non-HTML) application
-            <object> 	Defines an embedded object
-            <param> 	Defines a parameter for an object -->
+    <h1>ETIQUETAS DE TABLA EN HTML:</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Subtag</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;table&gt;</code></td>
+                <td>Creates a table</td>
+                <td><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Cell 1&lt;/td&gt;&lt;td&gt;Cell 2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;tr&gt;</code></td>
+                <td>Creates a table row</td>
+                <td><code>&lt;tr&gt;&lt;td&gt;Cell 1&lt;/td&gt;&lt;td&gt;Cell 2&lt;/td&gt;&lt;/tr&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;th&gt;</code></td>
+                <td>Creates a table header cell</td>
+                <td><code>&lt;th&gt;Column 1&lt;/th&gt;&lt;th&gt;Column 2&lt;/th&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;td&gt;</code></td>
+                <td>Creates a table data cell</td>
+                <td><code>&lt;td&gt;Cell 1&lt;/td&gt;&lt;td&gt;Cell 2&lt;/td&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;thead&gt;</code></td>
+                <td>Groups the header content in a table</td>
+                <td><code>&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Column 1&lt;/th&gt;&lt;th&gt;Column 2&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;tbody&gt;</code></td>
+                <td>Groups the body content in a table</td>
+                <td><code>&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Cell 1&lt;/td&gt;&lt;td&gt;Cell 2&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;tfoot&gt;</code></td>
+                <td>Groups the footer content in a table</td>
+                <td><code>&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;td&gt;$100.00&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;caption&gt;</code></td>
+                <td>Adds a caption to a table</td>
+                <td><code>&lt;caption&gt;Employee Salaries&lt;/caption&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;colgroup&gt;</code></td>
+                <td>Tag is useful for applying styles to entire columns, instead of repeating the styles for each cell,
+                    for
+                    each row.</td>
+                <td><code>&lt;colgroup&gt;*col span="2" style="background-color:red">&lt;/colgroup&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;col&gt;</code></td>
+                <td>Specifies properties for a column in a table</td>
+                <td><code>&lt;col&gt;col span="2" style="background-color:red">&lt;/col&gt;</code></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <h2>LOGICAMENTE ESTAS TABLAS PUEDEN SER EDITADAS CON STYLES</h2>
+    <ol>
+        <li><code>&lt;style&gt;</code> - defines styles for a table using CSS</li>
+        <li><code>&lt;div&gt;</code> - groups elements for styling purposes</li>
+        <li><code>&lt;span&gt;</code> - applies styles to specific text or elements within a table</li>
+        <li><code>&lt;a&gt;</code> - adds links to content within a table</li>
+    </ol>
+
+    <hr>
+    <h2>EJEMPLO DE TABLA CON MI INFO</h2>
+    <table>
+        <!-- El caption está POR DENTRO de la tabla, pero es como si se creara un espacio extra para él arribita del header -->
+        <caption>Santiago Dulcey | Web Developer Full-Stack</caption>
+
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Development Skills</th>
+                <th>Personal Skills</th>
+                <th>Hobbies</th>
+                <th>Motivation</th>
+                <th>Goals</th>
+                <th>Software Skills</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Proficiency in HTML, CSS, and JavaScript</td>
+                <td>Experience with version control</td>
+                <td>Learning new technologies</td>
+                <td>Create new and unique web apps</td>
+                <td>Improve coding skills</td>
+                <td>Git</td>
+            </tr>
+            <tr>
+                <td>React, Angular, Vue.js</td>
+                <td>Ability to work in a team</td>
+                <td>Building personal projects</td>
+                <td>Collaborating with others</td>
+                <td>Contribute to open-source projects</td>
+                <td>Figma</td>
+            </tr>
+            <tr>
+                <td>Understanding of responsive design principles</td>
+                <td>Problem-solving skills</td>
+                <td>Engaging in physical activity</td>
+                <td>Career advancement</td>
+                <td>Build a professional network</td>
+                <td>MySQL, Wamp, Firebase</td>
+            <tr>
+                <td>Node.js, PHP, Python</td>
+                <td>Familiarity with databases</td>
+                <td>Play the Ukelele</td>
+                <td>Good economic remuneration</td>
+                <td>Work with an advanced development team</td>
+                <td>Docker, iis server, ubuntu server</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">ESTE ES EL FOOTER DE MI TABLA</td>
+                <td colspan="3">No hay más contenido para esta tabla</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>

@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* Set font family and size for the entire document */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Style the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Style the table caption */
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style the table header cells */
+thead th {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Style the table body cells */
+tbody td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Style the table footer cells */
+tfoot td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+}
+
+/* Style the column groups */
+colgroup col:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+colgroup col:nth-child(even) {
+    background-color: #ddd;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+
+    /* Make the table header cells stack on top of each other */
+    thead th {
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+
+    /* Hide the column groups */
+    colgroup {
+        display: none;
+    }
+
+    /* Display each row as a block */
+    tbody tr {
+        display: block;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+    }
+
+    /* Display the data in each row as a block */
+    tbody td {
+        display: block;
+        text-align: right;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    /* Add a data label to each row */
+    tbody td::before {
+        content: attr(data-label);
+        display: inline-block;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    /* Add a footer row to display column totals */
+    tfoot td {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+}
